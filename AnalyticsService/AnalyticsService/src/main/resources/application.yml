@@ -1,0 +1,15 @@
+server:
+  port: 8088 # Port sur lequel le microservice va s'exécuter
+
+spring:
+  application:
+    name: AnalyticsService # Nom du service enregistré auprès d'Eureka
+
+eureka:
+  client:
+    register-with-eureka: true # Permet l'enregistrement de ce service auprès du serveur Eureka
+    fetch-registry: true       # Permet de récupérer la liste des services depuis Eureka
+    service-url:
+      default-zone: http://localhost:8761/eureka/ # URL du serveur Eureka
+  instance:
+    prefer-ip-address: true # Utiliser l'adresse IP au lieu du nom d'hôte pour l'enregistrement

@@ -1,0 +1,33 @@
+server:
+  port: 8085 # Le port sur lequel votre service s'exécute
+
+spring:
+  application:
+    name: alert-management # Nom du service enregistré auprès d'Eureka
+  datasource:
+    url: jdbc:mysql://localhost:3306/alert_management_db # URL de la base de données
+    username: root # Nom d'utilisateur pour la base de données
+    password: 123456 # Mot de passe pour la base de données
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Ajustez selon vos besoins (ex: none, validate, update, create-drop)
+    show-sql: true
+
+eureka:
+  client:
+    register-with-eureka: true # Permet l'enregistrement auprès du serveur Eureka
+    fetch-registry: true       # Permet de récupérer la liste des services enregistrés
+    service-url:
+      default-zone: http://localhost:8761/eureka/ # URL du serveur Eureka
+  instance:
+    prefer-ip-address: true    # Utilise l'adresse IP au lieu du nom d'hôte pour l'enregistrement
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always # Affiche les détails complets de l'état du service
