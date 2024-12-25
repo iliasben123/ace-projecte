@@ -1,0 +1,27 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: AUTHENTICATION-SERVICE
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/authentication_db
+    username: root
+    password: 123456
+    jpa:
+      hibernate:
+        ddl-auto: update
+
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/  # URL de votre serveur Eureka
+      register-with-eureka: true  # Enregistre ce service auprès d'Eureka
+      fetch-registry: true  # Récupère les informations de registre depuis Eureka
+    instance:
+      prefer-ip-address: true  # Utiliser l'adresse IP du service pour l'enregistrement
+
+jwt:
+  secret: MySecretKey123
+  expirationMs: 3600000
