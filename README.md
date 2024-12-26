@@ -66,11 +66,11 @@ Software architecture :
 
 Contributors
 
-ilias bensalk (((https://github.com/iliasben123))
-Maroua chegri (https://github.com/maroua200211)
-taha ouahdani ((https://github.com/DAMEDtaha))
-Oussama marir  ((https://github.com/oussamamarir))
-Driss Zamani    ((https://github.com/drisszamani))
+-ilias bensalk (((https://github.com/iliasben123))
+-Maroua chegri (https://github.com/maroua200211)
+-taha ouahdani ((https://github.com/DAMEDtaha))
+-Oussama marir  ((https://github.com/oussamamarir))
+-Driss Zamani    ((https://github.com/drisszamani))
 
 
 
