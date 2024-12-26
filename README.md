@@ -66,11 +66,8 @@ Software architecture :
 
 Contributors
 
--
--
--
--Oussama marir  ((https://github.com/oussamamarir))
 -Driss Zamani    ((https://github.com/drisszamani))
+-Oussama marir  ((https://github.com/oussamamarir))
 - ilias bensalk (((https://github.com/iliasben123))
 - Maroua chegri (https://github.com/maroua200211)
 - taha ouahdani ((https://github.com/DAMEDtaha))
