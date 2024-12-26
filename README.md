@@ -58,6 +58,12 @@ com.example.utils
 Classes utilitaires :
 Ce package contient des classes réutilisables pour des fonctionnalités communes, telles que la gestion des erreurs, la validation des entrées ou le formatage des réponses.
 
+Software architecture : 
+
+![tr](https://github.com/user-attachments/assets/6413eef0-ae0e-4989-952b-a8d4595f9912)
+
+
+
 Contributors
 
 ilias bensalk (((https://github.com/iliasben123))
